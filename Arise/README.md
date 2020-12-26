@@ -1,5 +1,5 @@
 # LDmod4 but it's expanded by someone who's not an actual coder
-- (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
+(LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
 
@@ -45,6 +45,37 @@ The following mods have not been cross-tested yet:
 
 ## Functions
 
+This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63LDMods/blob/master/LDmod.md), as well as:
+
+### Colored Platforms
+
+asd
+
+### Area Tags
+
+#### Fog
+
+**Tags:** `<fog1area>` `<fog2area>` `<fog3area>`
+Higher numbers give a thicker fog effect.
+
+
+#### Wind (now with customizable particles!)
+
+**Tag:** `<airarea>`
+
+**Variables:**
+- `<speed:x>` Maximum speed. Use a negative number for leftward wind. **Default:** 3
+- `<timer:x>` The time it takes to switch directions. Use -1 if you don't want the wind direction to ever change. **Default:** 100
+- `<particle:x>` Wind particles. Use 1 for leaves and 2 for snow. **Default:** 1
+
+**Example:** `<airarea><speed:1><timer:120><particle:2>`
+
+\- Warning: High numbers can cause Mario/Luigi to glitch through walls or out of bounds!
+\- Using this function will replace one layer of some backgrounds with the particle effect. LDmod4 limitation.
+
+(https://github.com/Raiyuuni/level_assets/raw/master/Arise/readme.images/Particles.png)
+
+
 ---
 
 ## Credits
@@ -56,4 +87,5 @@ The following mods have not been cross-tested yet:
 ## External links
 
 [**Jynji**'s mod library.](https://github.com/Runouw-Modders/SM63-Mods)
+
 [**Forgotten**'s LDmod4.](https://github.com/XnKradst/63LDMods)
