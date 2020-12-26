@@ -2,6 +2,11 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
+## Newest Update: 26/12/2020 19:00 GMT -3
+- Added moving and circle green platforms.
+- Edited command for touch-n-go green platforms.
+
+---
 
 This project is the byproduct of a split second idea for the Snow MDC. The level, Arise, is not an entry anymore, but I still intend in seeing it through.
 
@@ -54,9 +59,9 @@ No longer a Last Legacy exclusive feature! Useful for Purpura Hall shenanigans.
 This level has a significant amount of tags. You should edit a vanilla platform to your liking first, then replace it with a mod object. `**This program** converts your level code right away! **TO-DO**`
 
 **Tags:**
-- `**TO-DO**` Moving Green Platform
-- `<colorplat>` Touch-n-Go Moving Platform
-- `**TO-DO**` Circle Green Platform
+- `<colorplat>` Moving Green Platform
+- `<colorplatgo>` Touch-n-Go Moving Platform
+- `<colorplatcircle>` Circle Green Platform
 
 **Variables:**
 1. **Moving Platform**
@@ -75,7 +80,14 @@ This level has a significant amount of tags. You should edit a vanilla platform 
 
 
 2. **Circle Platform**
-`**TO-DO**`
+- `<scale:x>` Platform size. **{1, 2, 3}** **Default:** 2
+- `<speed:x>` Speed. Positive values yield clockwise spin. **Default:** 2
+- `<radius:x>` Platform radius. **Default:** 50
+- `<offset:x>` Starting angle offset, in degrees. **Default:** 0
+- `<dotdistance:x>` Distance between dots, in degrees. A value of 360 of above omits all dots. **Default:** 20
+
+Platform arms are unavailable.
+Since the circle platform sign yields multiple objects, the circle platforms were moved to the very top of item layering to prevent ID/depth collision.
 
 
 3. **Color (Online - setTransform)**
@@ -128,7 +140,7 @@ Higher numbers give a thicker fog effect.
 
 ## Credits
 - **Forgotten**, for creating the original LDmod. None of this coding blasphemy would be possible without his work.
-- **Hydreigon**, for providing lots of feedback over at the mods channel.
+- **Hydreigon** and **Jynji**, for providing lots of feedback over at the mods channel.
 
 ---
 
@@ -136,3 +148,11 @@ Higher numbers give a thicker fog effect.
 
 - [**Jynji**'s mod library.](https://github.com/Runouw-Modders/SM63-Mods)
 - [**Forgotten**'s LDmod4.](https://github.com/XnKradst/63LDMods)
+
+---
+
+## Changelog
+
+- **26/12/2020 19:00 GMT -3**
+Added moving and circle green platforms.
+Edited command for touch-n-go green platforms.
