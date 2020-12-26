@@ -49,7 +49,36 @@ This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63L
 
 ### Colored Platforms
 
-asd
+**Tags:**
+- `TO-DO` Moving Green Platform
+- `<colorplat>` Touch-n-Go Moving Platform
+- `TO-DO` Circle Green Platform
+
+**Variables:**
+1. **Moving Platform**
+
+
+2. **Circle Platform**
+`TO-DO`
+
+
+3. **Color (Online - setTransform)**
+- `<redperc:x>` Red channel, percentage. **[0, 100]** **Default:** 100
+- `<redoffset:x>` Red channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<greenperc:x>` Green channel, percentage. **[0, 100]** **Default:** 100
+- `<greenoffset:x>` Green channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<blueperc:x>` Blue channel, percentage. **[0, 100]** **Default:** 100
+- `<blueoffset:x>` Blue channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<alphaperc:x>` Alpha channel, percentage. **[0, 100]** **Default:** 100
+- `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
+
+[**Parameters for all preset colors.**](https://docs.google.com/spreadsheets/d/1n8EjU3Qe3UCEi0wm-RzcDASyxRoX2fLD8vLJjcDPKpE/edit?usp=sharing)
+
+![](https://i.imgur.com/sbU0yjf.png "")
+
+4. **Color (Offline - ColorMatrixFilter)**
+`TO-DO`
+
 
 ### Area Tags
 
@@ -70,8 +99,8 @@ Higher numbers give a thicker fog effect.
 
 **Example:** `<airarea><speed:1><timer:120><particle:2>`
 
-\- Warning: High numbers can cause Mario/Luigi to glitch through walls or out of bounds!
-\- Using this function will replace one layer of some backgrounds with the particle effect. LDmod4 limitation.
+- Warning: High numbers can cause Mario/Luigi to glitch through walls or out of bounds!
+- Using this function will replace one layer of some backgrounds with the particle effect. LDmod4 limitation.
 
 ![](https://i.imgur.com/p5JMX9R.png "")
 
