@@ -49,17 +49,33 @@ This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63L
 
 ### Colored Platforms
 
+No longer a Last Legacy exclusive feature! Useful for Purpura Hall shenanigans.
+
+This level has a significant amount of tags. You should edit a vanilla platform to your liking first, then replace it with a mod object. `**This program** converts your level code right away! **TO-DO**`
+
 **Tags:**
-- `TO-DO` Moving Green Platform
+- `**TO-DO**` Moving Green Platform
 - `<colorplat>` Touch-n-Go Moving Platform
-- `TO-DO` Circle Green Platform
+- `**TO-DO**` Circle Green Platform
 
 **Variables:**
 1. **Moving Platform**
+- `<scale:x>` Platform size. **{1, 2, 3}** **Default:** 2
+- `<disapearcount:x>` Disappearing count. **Touch-n-Go platforms only.** **Default:** 32 
+- `<DirectionX:x>` **"Right"** or **"Left"**. **Default:** "Right"
+- `<DirectionY:x>` **"Up"** or **"Down"**. **Default:** "Up"
+- `<distanceX:x>` Horizontal distance. **Default:** 25
+- `<distanceY:x>` Vertical distance. **Default:** 0
+- `<accelX:x>` Horizontal acceleration, absolute value. **Default:** 1
+- `<accelY:x>` Vertical acceleration, absolute value. **Default:** 0
+- `<speedX:x>` Horizontal speed, absolute value. **Default:** 2
+- `<speedY:x>` Vertical speed, absolute value. **Default:** 0
+- `<Xoffstart:x>` Horizontal offset. **Default:** 0
+- `<Yoffstart:x>` Vertical offset. **Default:** 0
 
 
 2. **Circle Platform**
-`TO-DO`
+`**TO-DO**`
 
 
 3. **Color (Online - setTransform)**
@@ -72,12 +88,14 @@ This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63L
 - `<alphaperc:x>` Alpha channel, percentage. **[0, 100]** **Default:** 100
 - `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
 
+**Example:** `<colorplat><redperc:90><redoffset:255><greenperc:100><greenoffset:255><blueperc:90><blueoffset:130>`
+
 [**Parameters for all preset colors.**](https://docs.google.com/spreadsheets/d/1n8EjU3Qe3UCEi0wm-RzcDASyxRoX2fLD8vLJjcDPKpE/edit?usp=sharing)
 
 ![](https://i.imgur.com/sbU0yjf.png "")
 
 4. **Color (Offline - ColorMatrixFilter)**
-`TO-DO`
+`**TO-DO**`
 
 
 ### Area Tags
@@ -87,6 +105,7 @@ This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63L
 **Tags:** `<fog1area>` `<fog2area>` `<fog3area>`
 Higher numbers give a thicker fog effect.
 
+![](https://i.imgur.com/EeMEBR2.png "")
 
 #### Wind (now with customizable particles!)
 
@@ -108,13 +127,12 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Credits
-**Forgotten**, for creating the original LDmod. None of this coding blasphemy would be possible without his work.
-**Hydreigon**, for providing lots of feedback over at the mods channel.
+- **Forgotten**, for creating the original LDmod. None of this coding blasphemy would be possible without his work.
+- **Hydreigon**, for providing lots of feedback over at the mods channel.
 
 ---
 
 ## External links
 
-[**Jynji**'s mod library.](https://github.com/Runouw-Modders/SM63-Mods)
-
-[**Forgotten**'s LDmod4.](https://github.com/XnKradst/63LDMods)
+- [**Jynji**'s mod library.](https://github.com/Runouw-Modders/SM63-Mods)
+- [**Forgotten**'s LDmod4.](https://github.com/XnKradst/63LDMods)
