@@ -73,7 +73,7 @@ Higher numbers give a thicker fog effect.
 \- Warning: High numbers can cause Mario/Luigi to glitch through walls or out of bounds!
 \- Using this function will replace one layer of some backgrounds with the particle effect. LDmod4 limitation.
 
-(https://github.com/Raiyuuni/level_assets/raw/master/Arise/readme.images/Particles.png)
+![](https://i.imgur.com/p5JMX9R.png "")
 
 
 ---
