@@ -2,9 +2,9 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
-## Newest Update: 26/12/2020 19:00 GMT -3
-- Added moving and circle green platforms.
-- Edited command for touch-n-go green platforms.
+## Newest Update: 27/12/2020 01:30 GMT -3
+- Added triangle platforms.
+- Fixed greenoffset parameter.
 
 ---
 
@@ -109,6 +109,47 @@ Since the circle platform sign yields multiple objects, the circle platforms wer
 4. **Color (Offline - ColorMatrixFilter)**
 `**TO-DO**`
 
+### Triangle Platforms
+
+Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is how.
+
+**Tag:** `<triangle>`
+
+**Variables:**
+1. **Triangle**
+- `<scale:x>` Platform size. **Default:** 100
+- `<angleoffset:x>` Angle offset. **Default:** 0
+- `<rotamount:x>` Rotation per cycle, in degrees. **Default:** 120
+- `<rotdirection:x>` **"Right"** or **"Left"**. **Default:** "Left"
+- `<rotspeed:x>` Rotation speed, absolute value. **Default:** 3
+- `<rotwait:x>` Rotation pause per cycle, in frames. **Default:** 92
+
+2. **Moving Platform**
+- `<DirectionX:x>` **"Right"** or **"Left"**. **Default:** "Right"
+- `<DirectionY:x>` **"Up"** or **"Down"**. **Default:** "Up"
+- `<distanceX:x>` Horizontal distance. **Default:** 25
+- `<distanceY:x>` Vertical distance. **Default:** 0
+- `<accelX:x>` Horizontal acceleration, absolute value. **Default:** 1
+- `<accelY:x>` Vertical acceleration, absolute value. **Default:** 0
+- `<speedX:x>` Horizontal speed, absolute value. **Default:** 2
+- `<speedY:x>` Vertical speed, absolute value. **Default:** 0
+- `<Xoffstart:x>` Horizontal offset. **Default:** 0
+- `<Yoffstart:x>` Vertical offset. **Default:** 0
+
+3. **Color (Online - setTransform)**
+- `<redperc:x>` Red channel, percentage. **[0, 100]** **Default:** 100
+- `<redoffset:x>` Red channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<greenperc:x>` Green channel, percentage. **[0, 100]** **Default:** 100
+- `<greenoffset:x>` Green channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<blueperc:x>` Blue channel, percentage. **[0, 100]** **Default:** 100
+- `<blueoffset:x>` Blue channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<alphaperc:x>` Alpha channel, percentage. **[0, 100]** **Default:** 100
+- `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
+
+4. **Color (Offline - ColorMatrixFilter)**
+`**TO-DO**`
+
+**Example:** `<triangle><rotamount:360><rotdirection:Right><DirectionX:Left><distanceX:120><accelX:2><speedX:3><redperc:70><greenperc:70><blueperc:70>`
 
 ### Area Tags
 
@@ -140,7 +181,7 @@ Higher numbers give a thicker fog effect.
 
 ## Credits
 - **Forgotten**, for creating the original LDmod. None of this coding blasphemy would be possible without his work.
-- **Hydreigon** and **Jynji**, for providing lots of feedback over at the mods channel.
+- **Hydreigon** and **Jynji**, for providing valuable feedback over at the mods channel.
 
 ---
 
@@ -152,7 +193,10 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
-
+- **27/12/2020 01:30 GMT -3**
+  - Added triangle platforms.
+  - Fixed greenoffset parameter.
+  
 - **26/12/2020 19:00 GMT -3**
-Added moving and circle green platforms.
-Edited command for touch-n-go green platforms.
+  - Added moving and circle green platforms.
+  - Edited command for touch-n-go green platforms.
