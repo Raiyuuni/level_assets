@@ -69,7 +69,7 @@ Most (or all) of the the objects described below can be recolored. To avoid repe
 2. **Color (Offline - ColorMatrixFilter)**
 `**TO-DO**`
 
-#### Platforms
+### Platforms
 
 No longer a Last Legacy exclusive feature! Useful for Purpura Hall shenanigans.
 
@@ -112,7 +112,7 @@ Since the circle platform sign yields multiple objects, the circle platforms wer
 
 ![](https://i.imgur.com/sbU0yjf.png "")
 
-#### Triangle Platforms
+### Triangle Platforms
 
 Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is how.
 
@@ -141,7 +141,7 @@ Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is 
 
 **Example 1:** `<triangle><rotamount:360><rotdirection:Right><DirectionX:Left><distanceX:120><accelX:2><speedX:3><redperc:70><greenperc:70><blueperc:70>`
 
-#### Flame Tower
+### Flame Tower
 
 Acid flames. Cold flames. Invisible flames. Wildfire!
 
@@ -162,9 +162,9 @@ It's important to note that the game uses the center of the flame object, NOT th
 - `xbase = xsign - 0,48 * yscale * sin(rotation)`
 - `ybase = ysign + 0,48 * yscale * sin(rotation)`
 
-### Area Tags
+## Area Tags
 
-#### Fog
+### Fog
 
 **Tags:** `<fog1area>` `<fog2area>` `<fog3area>`
 Higher numbers give a thicker fog effect.
