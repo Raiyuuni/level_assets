@@ -2,9 +2,8 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
-## Newest Update: 27/12/2020 01:30 GMT -3
-- Added triangle platforms.
-- Fixed greenoffset parameter.
+## Newest Update: 30/12/2020 16:45 GMT -3
+- Added flame towers.
 
 ---
 
@@ -52,7 +51,25 @@ The following mods have not been cross-tested yet:
 
 This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63LDMods/blob/master/LDmod.md), as well as:
 
-### Colored Platforms
+### Colored Objects
+
+Most (or all) of the the objects described below can be recolored. To avoid repetition, I moved coloring tags to a dedicated section.
+
+**Variables:**
+1. **Color (Online - setTransform)**
+- `<redperc:x>` Red channel, percentage. **[0, 100]** **Default:** 100
+- `<redoffset:x>` Red channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<greenperc:x>` Green channel, percentage. **[0, 100]** **Default:** 100
+- `<greenoffset:x>` Green channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<blueperc:x>` Blue channel, percentage. **[0, 100]** **Default:** 100
+- `<blueoffset:x>` Blue channel, absolute value offset. **[0, 255]** **Default:** 0
+- `<alphaperc:x>` Alpha channel, percentage. **[0, 100]** **Default:** 100
+- `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
+
+2. **Color (Offline - ColorMatrixFilter)**
+`**TO-DO**`
+
+#### Platforms
 
 No longer a Last Legacy exclusive feature! Useful for Purpura Hall shenanigans.
 
@@ -89,27 +106,13 @@ This level has a significant amount of tags. You should edit a vanilla platform 
 Platform arms are unavailable.
 Since the circle platform sign yields multiple objects, the circle platforms were moved to the very top of item layering to prevent ID/depth collision.
 
-
-3. **Color (Online - setTransform)**
-- `<redperc:x>` Red channel, percentage. **[0, 100]** **Default:** 100
-- `<redoffset:x>` Red channel, absolute value offset. **[0, 255]** **Default:** 0
-- `<greenperc:x>` Green channel, percentage. **[0, 100]** **Default:** 100
-- `<greenoffset:x>` Green channel, absolute value offset. **[0, 255]** **Default:** 0
-- `<blueperc:x>` Blue channel, percentage. **[0, 100]** **Default:** 100
-- `<blueoffset:x>` Blue channel, absolute value offset. **[0, 255]** **Default:** 0
-- `<alphaperc:x>` Alpha channel, percentage. **[0, 100]** **Default:** 100
-- `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
-
-**Example:** `<colorplat><redperc:90><redoffset:255><greenperc:100><greenoffset:255><blueperc:90><blueoffset:130>`
+**Example 1:** `<colorplat><redperc:90><redoffset:255><greenperc:100><greenoffset:255><blueperc:90><blueoffset:130>`
 
 [**Parameters for all preset colors.**](https://docs.google.com/spreadsheets/d/1n8EjU3Qe3UCEi0wm-RzcDASyxRoX2fLD8vLJjcDPKpE/edit?usp=sharing)
 
 ![](https://i.imgur.com/sbU0yjf.png "")
 
-4. **Color (Offline - ColorMatrixFilter)**
-`**TO-DO**`
-
-### Triangle Platforms
+#### Triangle Platforms
 
 Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is how.
 
@@ -136,20 +139,28 @@ Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is 
 - `<Xoffstart:x>` Horizontal offset. **Default:** 0
 - `<Yoffstart:x>` Vertical offset. **Default:** 0
 
-3. **Color (Online - setTransform)**
-- `<redperc:x>` Red channel, percentage. **[0, 100]** **Default:** 100
-- `<redoffset:x>` Red channel, absolute value offset. **[0, 255]** **Default:** 0
-- `<greenperc:x>` Green channel, percentage. **[0, 100]** **Default:** 100
-- `<greenoffset:x>` Green channel, absolute value offset. **[0, 255]** **Default:** 0
-- `<blueperc:x>` Blue channel, percentage. **[0, 100]** **Default:** 100
-- `<blueoffset:x>` Blue channel, absolute value offset. **[0, 255]** **Default:** 0
-- `<alphaperc:x>` Alpha channel, percentage. **[0, 100]** **Default:** 100
-- `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
+**Example 1:** `<triangle><rotamount:360><rotdirection:Right><DirectionX:Left><distanceX:120><accelX:2><speedX:3><redperc:70><greenperc:70><blueperc:70>`
 
-4. **Color (Offline - ColorMatrixFilter)**
-`**TO-DO**`
+#### Flame Tower
 
-**Example:** `<triangle><rotamount:360><rotdirection:Right><DirectionX:Left><distanceX:120><accelX:2><speedX:3><redperc:70><greenperc:70><blueperc:70>`
+Acid flames. Cold flames. Invisible flames. Wildfire!
+
+**Tag:** `<flame>`
+
+**Variables:**
+- `<xscale:x>` Local horizontal scale, percentage. **Default:** 100
+- `<yscale:x>` Local vertical scale, percentage. **Default:** 100
+- `<rotation:x>` Rotation, in degrees. A positive value rotates the flame clockwise. **Default:** 0
+- `<OnWait:x>` Time during which the turret is on, in frames. Set **endless** for a permanent flame. **Default:** 64
+- `<OffWait:x>` Time during which the turret is off, in frames. **Default:** 92
+- `<offstart:x>` Timer offset. Set offstart equal to OffWait in order to activate the flames immediately. **Default:** 0
+
+The graphics constant couldn't be added, as its mere presence in the code would disable all flames, regardless of whether it was set to true or false. Perhaps I can set up a second flame class just for decoration flames.
+
+It's important to note that the game uses the center of the flame object, NOT the base, as a reference for the coordinates. You can either use a vanilla flame object as a guide or use these formulae to obtain your sign coordinates:
+
+- `xbase = xsign - 0,48 * yscale * sin(rotation)`
+- `ybase = ysign + 0,48 * yscale * sin(rotation)`
 
 ### Area Tags
 
@@ -193,6 +204,9 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
+- **30/12/2020 16:45 GMT -3**
+  - Added flame towers.
+
 - **27/12/2020 01:30 GMT -3**
   - Added triangle platforms.
   - Fixed greenoffset parameter.
