@@ -160,7 +160,7 @@ The graphics constant couldn't be added, as its mere presence in the code would 
 It's important to note that the game uses the center of the flame object, NOT the base, as a reference for the coordinates. You can either use a vanilla flame object as a guide or use these formulae to obtain your sign coordinates:
 
 - `xbase = xsign - 0,48 * yscale * sin(rotation)`
-- `ybase = ysign + 0,48 * yscale * sin(rotation)`
+- `ybase = ysign + 0,48 * yscale * cos(rotation)`
 
 ## Area Tags
 
