@@ -62,7 +62,25 @@ This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63L
 
 ### Advanced Custom Images
 
-`**TO-DO**`
+Time to reduce sign clutter!
+
+**Tag:**
+- `<image:x>`, where `x` is either an image URL or a predefined shortcut. Shortcuts automatically apply their respective image offsets.
+  - `BY`
+  - `Eddie` Captain Toad.
+  - `Toad1` Toad assistant.
+  - `Toadette`
+  - `Pianta`
+  - `Stomp` Sombrero Thwomp.
+  
+**Variables:**
+- `<xo:x>` Horizontal image offset, pixels.
+- `<yo:x>` Vertical image offset, pixels.
+- `<mi>` Mirrors your image horizontally when applied.
+
+**Examples:**
+- `<image:https://github.com/Raiyuuni/level_assets/raw/master/Arise/Pianta%20Test1.png><xo:-18><yo:-51>`
+- `<image:Pianta>`
 
 ### Audio Cues
 
