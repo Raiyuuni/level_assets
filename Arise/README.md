@@ -2,8 +2,11 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
-## Newest Update: 30/12/2020 16:45 GMT -3
-- Added flame towers.
+## Newest Update: 02/01/2021 11:00 GMT -3
+- Advanced image calling: offsets, horizontal mirroring, shortcuts.
+- Sound effects via URL and shortcuts.
+- Compatibility with cinema messages.
+- Piantas.
 
 ---
 
@@ -285,7 +288,7 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
-- **TBA**
+- **02/01/2021 11:00 GMT -3**
   - Advanced image calling: offsets, horizontal mirroring, shortcuts.
   - Sound effects via URL and shortcuts.
   - Compatibility with cinema messages.
