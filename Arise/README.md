@@ -35,6 +35,15 @@ The image source in the offline title end string is a **relative path** starting
 
 ## Compatibility
 
+This mod is **COMPATIBLE** with the following files:
+- [**cinema.swf**](https://github.com/Raiyuuni/level_assets/blob/master/Arise/cinema.swf), [original version by Jynji](https://github.com/Runouw-Modders/SM63-Mods/blob/master/public/cinema.swf). Both the original LDmod4 and cinema mods reassigned the in-game functions `_root.KeyPlus()` and `_root.PlayMessage(a)`, and did not account for each other's functionalities. One mod would break the other by overwriting those functions. To enable it alongside LDmod4, add this string to your level title:
+
+`%3Cimg%20src%3D%22https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2FRunouw%2DModders%2FSM63%2DMods%2Fmaster%2Fpublic%2FstringData%2Eswf%22%3E`
+
+- [**stringData.swf**](https://github.com/Runouw-Modders/SM63-Mods/blob/master/public/stringData.swf) by Jynji. This file is a prerequisite for most of Jynji's mods, including cinema. To enable it, add this string to your level title:
+
+`%3Cimg%20src%3D%22https%3A%2F%2Fgithub.com%2FRaiyuuni%2Flevel_assets%2Fraw%2Fmaster%2FArise%2Fcinema.swf%22%3E`
+
 This mod is **NOT COMPATIBLE** with the following files:
 
 - [**graphics.swf**](https://github.com/Runouw-Modders/SM63-Mods/blob/master/dev/graphics.swf) by Jynji. His mod can still make the original object transparent and place a custom image over it, but the image doesn't follow the object.
@@ -50,6 +59,20 @@ The following mods have not been cross-tested yet:
 ## Functions
 
 This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63LDMods/blob/master/LDmod.md), as well as:
+
+### Audio Cues
+
+Play an audio file whenever a sign is read. This enables your characters to talk!
+
+**Tag:**
+- `<audio:x>` Audio file, direct link. You can also use shortcuts for certain sounds.
+  - `BY1` A happy Yoshi.
+  - `BY2` Ditto.
+  - `Olivine1` "Hello!"
+  - `Pianta1` Normal Pianta speech.
+  - `Pianta2` This Pianta is deranged!
+
+**Example:** `<audio:https://github.com/Raiyuuni/level_assets/raw/master/Arise/Audio/Pianta%20Normal.mp3> I'm a chuckster!`
 
 ### Colored Objects
 
@@ -68,6 +91,25 @@ Most (or all) of the the objects described below can be recolored. To avoid repe
 
 2. **Color (Offline - ColorMatrixFilter)**
 `**TO-DO**`
+
+### Piantas
+
+Bring a helmet, because it's time to get tossed!
+
+This feature requires **cinema** to be enabled. The implementation is imperfect, and a normal sign prevents Mario from getting launched.
+
+**Tag:**
+- `<pianta:x,y>`
+
+**Variables:**
+- `x` Horizontal speed.
+- `y` Vertical speed. To launch upwards, use a negative value.
+
+**Example:** Create two signs and place them on the same coordinates.
+- Sign 1: `<pianta:5,-20> I'm a chuckster!`
+- Sign 2: `<image:Pianta>`
+
+The function `<pianta:x,y> ` is complemented by the functions `<audio:x>`, `<cinemamessage:x>` and `<invis>`, but none of them need to be explicit. The implcit arguments of audio and cinema are `Pianta1` and `1`, respectively.
 
 ### Platforms
 
