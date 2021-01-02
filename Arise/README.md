@@ -60,6 +60,10 @@ The following mods have not been cross-tested yet:
 
 This mod can perform [all of LDmod4's functions](https://github.com/XnKradst/63LDMods/blob/master/LDmod.md), as well as:
 
+### Advanced Custom Images
+
+`**TO-DO**`
+
 ### Audio Cues
 
 Play an audio file whenever a sign is read. This enables your characters to talk!
@@ -73,6 +77,23 @@ Play an audio file whenever a sign is read. This enables your characters to talk
   - `Pianta2` This Pianta is deranged!
 
 **Example:** `<audio:https://github.com/Raiyuuni/level_assets/raw/master/Arise/Audio/Pianta%20Normal.mp3> I'm a chuckster!`
+
+### Cinema Messages
+
+Story Mode dialogue? At this time of year? At this time of day? In this part of the country? Localized entirely within the Level Designer?
+
+**Tags:**
+- `<cinemamessage:x>`, where `x` is a Story Mode border defined by an integer.
+  - `1` Normal (Toad)
+  - `2` Kamek
+  - `3` Bowser
+  - `4` Peach
+- `!n` is a message splitter.
+
+**Example:** `<cinemamessage:1><b>Yoshi:</b> Hello! !n<b>Yoshi:</b> Here, have an apple.`
+
+![](https://i.imgur.com/dBqKREu.png "")
+  
 
 ### Colored Objects
 
@@ -246,6 +267,12 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
+- **TBA**
+  - Advanced image calling: offsets, horizontal mirroring, shortcuts.
+  - Sound effects via URL and shortcuts.
+  - Compatibility with cinema messages.
+  - Piantas.
+
 - **30/12/2020 16:45 GMT -3**
   - Added flame towers.
 
