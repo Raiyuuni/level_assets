@@ -288,6 +288,9 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
+- **TBA**
+  - NPCs, NPCs everywhere.
+
 - **02/01/2021 11:00 GMT -3**
   - Advanced image calling: offsets, horizontal mirroring, shortcuts.
   - Sound effects via URL and shortcuts.
