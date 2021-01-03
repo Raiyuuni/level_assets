@@ -2,11 +2,9 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
-## Newest Update: 02/01/2021 11:00 GMT -3
-- Advanced image calling: offsets, horizontal mirroring, shortcuts.
-- Sound effects via URL and shortcuts.
-- Compatibility with cinema messages.
-- Piantas.
+## Newest Update: 03/01/2021 20:00 GMT -3
+- 12 unique NPCs plus three variations to choose from!
+- Sound effects for EVERYONE.
 
 ---
 
@@ -69,12 +67,21 @@ Time to reduce sign clutter!
 
 **Tag:**
 - `<image:x>`, where `x` is either an image URL or a predefined shortcut. Shortcuts automatically apply their respective image offsets.
-  - `BY`
-  - `Eddie` Captain Toad.
-  - `Toad1` Toad assistant.
-  - `Toadette`
-  - `Pianta`
-  - `Stomp` Sombrero Thwomp.
+  - `BobombBuddy` A friendly Bob-omb.
+  - `BY` A black Yoshi.
+  - `Chuck` Toadette from Azurine Falls.
+  - `Eddie` Captain Toad from Azurine Falls.
+  - `KoopaGreen` A green shell Koopa.
+  - `KoopaRed` A red shell Koopa.
+  - `KoopaTCK` A technician Koopa from A Holiday Stunt.
+  - `Luigi` Luigi.
+  - `Mario` Mario.
+  - `Nero` Toad assistant from Azurine Falls.
+  - `Olivine` Olivine from Project Super.
+  - `Pianta1` Blue Pianta.
+  - `Pianta2` Don Pianta.
+  - `Rosalina` Rosalina.
+  - `Stomp` Sombrero Thwomp from Azurine Falls.
   
 **Variables:**
 - `<xo:x>` Horizontal image offset, pixels.
@@ -288,8 +295,9 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
-- **TBA**
-  - NPCs, NPCs everywhere.
+- **03/01/2021 20:00 GMT -3**
+- 12 unique NPCs plus three variations to choose from!
+- Sound effects for EVERYONE.
 
 - **02/01/2021 11:00 GMT -3**
   - Advanced image calling: offsets, horizontal mirroring, shortcuts.
