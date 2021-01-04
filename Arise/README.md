@@ -307,8 +307,8 @@ Higher numbers give a thicker fog effect.
 
 ## Changelog
 - **03/01/2021 20:00 GMT -3**
-- 12 unique NPCs plus three variations to choose from!
-- Sound effects for EVERYONE.
+  - 12 unique NPCs plus three variations to choose from!
+  - Sound effects for EVERYONE.
 
 - **02/01/2021 11:00 GMT -3**
   - Advanced image calling: offsets, horizontal mirroring, shortcuts.
