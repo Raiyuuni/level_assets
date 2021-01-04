@@ -98,11 +98,22 @@ Play an audio file whenever a sign is read. This enables your characters to talk
 
 **Tag:**
 - `<audio:x>` Audio file, direct link. You can also use shortcuts for certain sounds.
-  - `BY1` A happy Yoshi.
-  - `BY2` Ditto.
-  - `Olivine1` "Hello!"
+  - `Bobomb`
+  - `BY1`
+  - `BY2`
+  - `Koopa`
+  - `Luigi1`
+  - `Luigi2`
+  - `Mario`
+  - `Olivine1`
   - `Pianta1` Normal Pianta speech.
   - `Pianta2` This Pianta is deranged!
+  - `Rosalina1`
+  - `Rosalina2`
+  - `Thwomp`
+  - `Toad1`
+  - `Toad2`
+  - `Toadette`
 
 **Example:** `<audio:https://github.com/Raiyuuni/level_assets/raw/master/Arise/Audio/Pianta%20Normal.mp3> I'm a chuckster!`
 
@@ -141,6 +152,27 @@ Most (or all) of the the objects described below can be recolored. To avoid repe
 2. **Color (Offline - ColorMatrixFilter)**
 `**TO-DO**`
 
+### Flame Tower
+
+Acid flames. Cold flames. Invisible flames. Wildfire!
+
+**Tag:** `<flame>`
+
+**Variables:**
+- `<xscale:x>` Local horizontal scale, percentage. **Default:** 100
+- `<yscale:x>` Local vertical scale, percentage. **Default:** 100
+- `<rotation:x>` Rotation, in degrees. A positive value rotates the flame clockwise. **Default:** 0
+- `<OnWait:x>` Time during which the turret is on, in frames. Set **endless** for a permanent flame. **Default:** 64
+- `<OffWait:x>` Time during which the turret is off, in frames. **Default:** 92
+- `<offstart:x>` Timer offset. Set offstart equal to OffWait in order to activate the flames immediately. **Default:** 0
+
+The graphics constant couldn't be added, as its mere presence in the code would disable all flames, regardless of whether it was set to true or false. Perhaps I can set up a second flame class just for decoration flames.
+
+It's important to note that the game uses the center of the flame object, NOT the base, as a reference for the coordinates. You can either use a vanilla flame object as a guide or use these formulae to obtain your sign coordinates:
+
+- `xbase = xsign - 0,48 * yscale * sin(rotation)`
+- `ybase = ysign + 0,48 * yscale * cos(rotation)`
+
 ### Piantas
 
 Bring a helmet, because it's time to get tossed!
@@ -158,13 +190,13 @@ This feature requires **cinema** to be enabled. The implementation is imperfect,
 - Sign 1: `<pianta:5,-20> I'm a chuckster!`
 - Sign 2: `<image:Pianta>`
 
-The function `<pianta:x,y> ` is complemented by the functions `<audio:x>`, `<cinemamessage:x>` and `<invis>`, but none of them need to be explicit. The implcit arguments of audio and cinema are `Pianta1` and `1`, respectively.
+The function `<pianta:x,y> ` is complemented by the functions `<audio:x>`, `<cinemamessage:x>` and `<invis>`.
 
 ### Platforms
 
 No longer a Last Legacy exclusive feature! Useful for Purpura Hall shenanigans.
 
-This level has a significant amount of tags. You should edit a vanilla platform to your liking first, then replace it with a mod object. `**This program** converts your level code right away! **TO-DO**`
+This level has a significant amount of tags. You should edit a vanilla platform to your liking first, then replace it with a mod object.
 
 **Tags:**
 - `<colorplat>` Moving Green Platform
@@ -231,27 +263,6 @@ Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is 
 - `<Yoffstart:x>` Vertical offset. **Default:** 0
 
 **Example 1:** `<triangle><rotamount:360><rotdirection:Right><DirectionX:Left><distanceX:120><accelX:2><speedX:3><redperc:70><greenperc:70><blueperc:70>`
-
-### Flame Tower
-
-Acid flames. Cold flames. Invisible flames. Wildfire!
-
-**Tag:** `<flame>`
-
-**Variables:**
-- `<xscale:x>` Local horizontal scale, percentage. **Default:** 100
-- `<yscale:x>` Local vertical scale, percentage. **Default:** 100
-- `<rotation:x>` Rotation, in degrees. A positive value rotates the flame clockwise. **Default:** 0
-- `<OnWait:x>` Time during which the turret is on, in frames. Set **endless** for a permanent flame. **Default:** 64
-- `<OffWait:x>` Time during which the turret is off, in frames. **Default:** 92
-- `<offstart:x>` Timer offset. Set offstart equal to OffWait in order to activate the flames immediately. **Default:** 0
-
-The graphics constant couldn't be added, as its mere presence in the code would disable all flames, regardless of whether it was set to true or false. Perhaps I can set up a second flame class just for decoration flames.
-
-It's important to note that the game uses the center of the flame object, NOT the base, as a reference for the coordinates. You can either use a vanilla flame object as a guide or use these formulae to obtain your sign coordinates:
-
-- `xbase = xsign - 0,48 * yscale * sin(rotation)`
-- `ybase = ysign + 0,48 * yscale * cos(rotation)`
 
 ## Area Tags
 
