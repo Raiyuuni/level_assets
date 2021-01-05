@@ -298,7 +298,7 @@ Higher numbers give a thicker fog effect.
 
 ![](https://i.imgur.com/EeMEBR2.png "")
 
-#### Wind (now with customizable particles!)
+### Wind (now with customizable particles!)
 
 **Tag:** `<airarea>`
 
