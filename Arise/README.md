@@ -2,9 +2,8 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
-## Newest Update: 03/01/2021 20:00 GMT -3
-- 12 unique NPCs plus three variations to choose from!
-- Sound effects for EVERYONE.
+## Newest Update: 05/01/2021 14:50 GMT -3
+- Flamethrowers.
 
 ---
 
@@ -152,6 +151,32 @@ Most (or all) of the the objects described below can be recolored. To avoid repe
 2. **Color (Offline - ColorMatrixFilter)**
 `**TO-DO**`
 
+### Flamethrower
+
+A portable device of destruction.
+
+You might see the graphics glitch out for the first couple of cycles. That's because the images only load after the function that controls their behavior starts to run. To minimize those issues, move the sign to the top of the item section, so it'll be loaded first.
+
+**Tag:** `<flamethrower>`
+
+**Variables:**
+- `<rotation:x>` Rotation, in degrees. A positive value rotates the turret clockwise. **Default:** 0
+- `<direction:x>` Direction of the flames. **Left**, **Right** or **Both**. **Default:** 
+- `<timer:x>` Reload time, in frames. **Default:** 100
+- `<offset:x>` Reload offset, in frames. **Default:** 100
+- `<amount:x>` How many fireballs are shot per cycle. **Default:** 3
+- `<angle:x>` Directional variance of the fireballs, in degrees. **Default:** 20
+- `<speed:x>` Average fireball speed. **Default:** 4
+- `<follow:x>` If set to 1, the fireballs chase the player. **Default:** 0
+- `<bounce:x>` If set to 1, the fireballs bounce off the ground. **Default:** 0
+- `<bounceboost:x>` The power/speed of the bounce. **Default:** 0
+- `<bouncecount:x>` The maximum amount of bounces before exploding. **Default:** 3
+- `<color:x>` Fireball color. 1 is orange, 2 is purple, 3 is green, 4 is blue, 5 or more is gray. 0 makes them flicker. **Default:** 1
+
+**Example:** `<flamethrower><direction:Both>`
+
+![](https://i.imgur.com/sloMMFQ.png "")
+
 ### Flame Tower
 
 Acid flames. Cold flames. Invisible flames. Wildfire!
@@ -207,8 +232,8 @@ This level has a significant amount of tags. You should edit a vanilla platform 
 1. **Moving Platform**
 - `<scale:x>` Platform size. **{1, 2, 3}** **Default:** 2
 - `<disapearcount:x>` Disappearing count. **Touch-n-Go platforms only.** **Default:** 32 
-- `<DirectionX:x>` **"Right"** or **"Left"**. **Default:** "Right"
-- `<DirectionY:x>` **"Up"** or **"Down"**. **Default:** "Up"
+- `<DirectionX:x>` **"Right"** or **"Left"**. **Default:** Right
+- `<DirectionY:x>` **"Up"** or **"Down"**. **Default:** Up
 - `<distanceX:x>` Horizontal distance. **Default:** 25
 - `<distanceY:x>` Vertical distance. **Default:** 0
 - `<accelX:x>` Horizontal acceleration, absolute value. **Default:** 1
@@ -306,6 +331,9 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
+- **05/01/2021 14:50 GMT -3**
+  - Flamethrowers.
+  
 - **03/01/2021 20:00 GMT -3**
   - 12 unique NPCs plus three variations to choose from!
   - Sound effects for EVERYONE.
