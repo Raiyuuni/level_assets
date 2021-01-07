@@ -2,8 +2,9 @@
 (LDmod4-Rai-online.swf; LDmod4-Rai-offline.swf)
 
 ---
-## Newest Update: 05/01/2021 14:50 GMT -3
-- Flamethrowers.
+## Newest Update: 06/01/2021 23:00 GMT -3
+- Decorative flame towers.
+- ColorMatrix support (offline version).
 
 ---
 
@@ -331,6 +332,10 @@ Higher numbers give a thicker fog effect.
 ---
 
 ## Changelog
+- **06/01/2021 23:00 GMT -3**
+  - Decorative flame towers.
+  - ColorMatrix support (offline version).
+
 - **05/01/2021 14:50 GMT -3**
   - Flamethrowers.
   
