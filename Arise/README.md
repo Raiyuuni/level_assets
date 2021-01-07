@@ -150,7 +150,10 @@ Most (or all) of the the objects described below can be recolored. To avoid repe
 - `<alphaoffset:x>` Alpha channel, absolute value offset. **[0, 100]** **Default:** 0
 
 2. **Color (Offline - ColorMatrixFilter)**
-`**TO-DO**`
+- `<hue:x>` Hue shift, in degrees. **Default:** 0
+- `<brightness:x>` **Default:** 0
+- `<contrast:x>` **Default:** 100
+- `<saturation:x>` **Default:** 100
 
 ### Flamethrower
 
