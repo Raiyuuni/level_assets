@@ -4,6 +4,7 @@
 ---
 ## Newest Update: 06/01/2021 23:00 GMT -3
 - Decorative flame towers.
+- Metal Mario is immune to wind.
 - ColorMatrix support (offline version).
 
 ---
@@ -151,9 +152,9 @@ Most (or all) of the the objects described below can be recolored. To avoid repe
 
 2. **Color (Offline - ColorMatrixFilter)**
 - `<hue:x>` Hue shift, in degrees. **Default:** 0
-- `<brightness:x>` **Default:** 0
-- `<contrast:x>` **Default:** 100
-- `<saturation:x>` **Default:** 100
+- `<brightness:x>` Brightness offset. **Default:** 0
+- `<contrast:x>` Contrast value. **Default:** 100
+- `<saturation:x>` Saturation value. **Default:** 100
 
 ### Flamethrower
 
@@ -185,7 +186,9 @@ You might see the graphics glitch out for the first couple of cycles. That's bec
 
 Acid flames. Cold flames. Invisible flames. Wildfire!
 
-**Tag:** `<flame>`
+**Tags:** 
+- `<flame>` for flames with collision.
+- `<flamegfx>` for decorative flames.
 
 **Variables:**
 - `<xscale:x>` Local horizontal scale, percentage. **Default:** 100
@@ -315,6 +318,7 @@ Higher numbers give a thicker fog effect.
 
 - Warning: High numbers can cause Mario/Luigi to glitch through walls or out of bounds!
 - Using this function will replace one layer of some backgrounds with the particle effect. LDmod4 limitation.
+- When Mario collects a Metal Cap, he won't be affected by the wind.
 
 ![](https://i.imgur.com/p5JMX9R.png "")
 
@@ -337,6 +341,7 @@ Higher numbers give a thicker fog effect.
 ## Changelog
 - **06/01/2021 23:00 GMT -3**
   - Decorative flame towers.
+  - Metal Mario is immune to wind.
   - ColorMatrix support (offline version).
 
 - **05/01/2021 14:50 GMT -3**
