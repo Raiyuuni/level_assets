@@ -267,6 +267,14 @@ Since the circle platform sign yields multiple objects, the circle platforms wer
 
 ![](https://i.imgur.com/sbU0yjf.png "")
 
+### Shine Sprites
+
+Shine Sprites for coloring purposes.
+
+**Tag:** `<shinesprite>`
+
+**Example :** `<shinesprite><hue:125>`
+
 ### Triangle Platforms
 
 Ever wondered how Runouw made those inverted triangles at Rainbow Road? This is how.
